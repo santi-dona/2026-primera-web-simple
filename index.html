@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santino Donati - Portfolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <div class="profile-image">
+                <div class="basketball-icon">🏀</div>
+                <div class="status-indicator"></div>
+            </div>
+            <h1 class="name">Santino Donati</h1>
+            <p class="tagline">Estudiante de Informática & Desarrollador</p>
+        </header>
+          <section class="about-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🎂</div>
+                    <span class="info-label">Edad</span>
+                    <span class="info-value">17 años</span>
+                    <span class="info-detail">13 de Julio de 2008</span>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎯</div>
+                    <span class="info-label">Pasión</span>
+                    <span class="info-value">Basketball</span>
+                    <span class="info-detail">Jugador ativo</span>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎓</div>
+                    <span class="info-label">Estudios</span>
+                    <span class="info-value">ETec</span>
+                    <span class="info-detail">Informática</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-section">
+            <h2 class="section-title">
+                <span class="title-icon">💼</span>
+                Trabajo
+            </h2>
+            <div class="work-cards">
+                <div class="work-card">
+                    <div class="work-icon">🌱</div>
+                    <div class="work-info">
+                        <span class="work-title">Jardinero</span>
+                        <span class="work-desc">Mantenimiento de jardines y plantas</span>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">🐕</div>
+                    <div class="work-info">
+                        <span class="work-title">Paseador & Cuidador de Perros</span>
+                        <span class="work-desc">Paseos y cuidado de mascotas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="friends-section">
+            <h2 class="section-title">
+                <span class="title-icon">👥</span>
+                Grupo de Amigos
+            </h2>
+            <div class="friends-container">
+                <div class="friend-tag">
+                    <span class="friend-emoji">🔥</span>
+                    Los Muchachos
+                </div>
+                <div class="friend-tag secondary">
+                    <span class="friend-emoji">🎸</span>
+                    La banda del Cruza
+                </div>
+            </div>
+            <div class="favorite-activity">
+                <span class="activity-label">Actividad favorita:</span>
+                <span class="activity-value">Salir de fiesta con Los Muchachos</span>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="section-title">
+                <span class="title-icon">📱</span>
+                Contacto
+            </h2>
+            <div class="contact-cards">
+                <a href="tel:+542613428007" class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Teléfono</span>
+                        <span class="contact-value">+54 9 261 342-8007</span>
+                    </div>
+                </a>
+                <a href="mailto:santidonati1@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">santidonati1@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <h2 class="section-title">
+                <span class="title-icon">⭐</span>
+                Reseñas
+            </h2>
+            
+            <div class="rating-box">
+                <div class="rating-score">
+                    <span class="big-rating" id="averageRating">0.0</span>
+                    <div class="stars-display" id="averageStars"></div>
+                </div>
+                <div class="rating-info">
+                    <span class="review-count" id="reviewCount">0 reseñas</span>
+                </div>
+            </div>
+
+            <div class="review-form">
+                <h3>Deja tu reseña</h3>
+                <div class="star-rating" id="starInput">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+                <div class="form-fields">
+                    <input type="text" id="reviewerName" placeholder="Tu nombre" maxlength="30">
+                    <textarea id="reviewText" placeholder="Escribe tu opinión..." maxlength="200"></textarea>
+                    <button id="submitReview" class="submit-btn">
+                        <span>Enviar Reseña</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="reviews-list" id="reviewsList"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2024 Santino Donati</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_santidonati?igsh=cGJOZWR2ZHBqZW5R" target="_blank" class="social-link" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>@_santidonati</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
